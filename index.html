@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .container{
+            width: 280px;
+            margin: 15px auto;
+            background-color: gainsboro;
+        }
+    .butNum{
+        float: left;
+        width: 40px;
+        margin: 15px;
+        margin-left: 30px;
+        background-color: white;
+        text-align: center;
+        padding-top: 5px;
+        border-radius: 4px;
+        cursor:pointer;
+    }
+    .butNum:hover{
+        background-color: blue;
+        color: white;
+    }
+    .but{
+        float: left;
+        width: 40px;
+        margin: 15px;
+        margin-left: 25px;
+        background-color: gray;
+        text-align: center;
+        padding:5px ;
+        border-radius: 4px;
+        cursor:pointer;
+      }
+      .but:hover{
+          background-color: lightslategray;
+          color: rgb(233, 218, 218);
+      }
+      .result{
+            background-color: black;
+            width: 120px;
+            margin-left: 75px;
+            margin-top: -3px;
+            background-color: rgb(173, 173, 180);
+            text-align: center;
+            padding:5px ;
+            border-radius: 4px;
+            cursor:pointer;
+        }
+      .screen{
+        background-color:rgb(163, 163, 163) ;
+        width: 260px;
+        padding:5px;
+        color:black;
+        margin:5px;
+        border-radius: 4px;
+      }
+    </style>
+</head>
+<body>
+    <div style="text-align: center; font-size: 24px; color: black;">
+        Calculator
+    </div>
+    <div class="container">
+        <div class="screen">0</div>
+        <div class="butNum">1</div>
+        <div class="butNum">2</div>
+        <div class="butNum">3</div>
+        <div class="butNum">4</div>
+        <div class="butNum">5</div>
+        <div class="butNum">6</div>
+        <div class="butNum">7</div>
+        <div class="butNum">8</div>
+        <div class="butNum">9</div>
+        <div class="butNum">0</div>
+        <div class="but">+</div>
+        <div class="but">-</div>
+        <div class="but">*</div>
+        <div class="but">/</div>
+        <div class="but">AC</div>
+        <div style="clear: both;"></div>
+        <div class="result">=</div>
+    </div>
+    
+    <!-- special scripts for integration in MTW gallery - must be placed at the bottom of the HTML after your code -->
+    
+    <script>
+        // custom config for the MTW app 
+        const mtwAppConfig = {
+            border: true // app border in the MTW page                    
+        }
+
+        ///////////////////////////////////////////////////////
+        // implement this functions in order to use private API        
+        const sendPrivateApiRequest = async () => {
+            // your code here:
+            // sendRequestToParent({ cat: 'getAssets' })
+        }        
+
+        const acceptPrivateApiResponse = async (data) => {
+            // process received data here:
+            // console.log(data)
+        }
+
+        // use this in order to send on document load
+        document.addEventListener('DOMContentLoaded', () => {
+            // your code here:
+            //sendRequestToParent({ method: 'getAssets' })
+        })
+
+    </script>
+    <script src="https://morethanwallet.com/appstore/index.js"></script>
+</body>
+
+</html>
